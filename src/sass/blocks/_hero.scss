@@ -1,0 +1,16 @@
+.hero {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-bottom: 40px;
+   position: relative;
+   &__text {
+      margin-top: 40px;
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 45px;
+      color: #F3F3F3;
+   }
+}

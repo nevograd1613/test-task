@@ -1,0 +1,79 @@
+.header {
+   background: #B47FF7;
+   padding: 0px 56px 48px 155px;
+   position: relative;
+   &__menu {
+      display: flex;
+      justify-content: space-between;
+      &__links {
+         margin-top: 55px;
+         display: flex;
+         gap: 60px;
+      }
+      &__link {
+         a {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 45px;
+            color: #FFFFFF;
+         }
+      }
+   }
+   &__burger {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      margin-top: 63px;
+      cursor: pointer;
+      span {
+         display: block;
+         width: 44px;
+         height: 3px;
+         background: $white;
+      }
+      &.active {
+         display: none;
+      }
+   }
+   &__close {
+      margin-top: 64px;
+      display: none;
+      cursor: pointer;
+      z-index: 1000;
+      &.active {
+         display: block;
+      }
+   }
+}
+
+.nav {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #A6C9FF;
+   border: 1px solid #00FF4A;
+   width: 451px;
+   height: 500px;
+   z-index: 100;
+   padding-top: 33px;
+   padding-left: 64.5px;
+   display: none;
+   &.active {
+      display: block;
+   }
+   &__item {
+      margin-bottom: 39px;
+      a {
+         font-family: 'Roboto';
+         font-weight: 500;
+         font-size: 28px;
+         line-height: 45px;
+         color: #FFFFFF;
+         &:hover {
+            text-decoration: none;
+         }
+      }
+   }
+}
